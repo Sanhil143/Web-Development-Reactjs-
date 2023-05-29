@@ -17,4 +17,4 @@ const handleClick = () => {
   )
 }
 
-// export default FunctionalComponent
+// export default FunctionalComponents
