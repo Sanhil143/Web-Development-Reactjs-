@@ -9,11 +9,11 @@ function App() {
   <h1 style={{color:'white'}}>TODO-APP</h1>
     <div className='todo-container'>
       <Header/>
-      <TodoList/>
-      <TodoList/>
-      <TodoList/>
-      <TodoList/>
-      <TodoList/>
+      <TodoList li='Eat'/>
+      <TodoList li='Code'/>
+      <TodoList li='Play'/>
+      <TodoList li='Study'/>
+      <TodoList li='Sleep'/>
       <Button/>
     </div>
     </>
