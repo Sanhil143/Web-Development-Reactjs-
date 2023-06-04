@@ -10,3 +10,4 @@ const ParentComponent = () => {
 }
 
 export default ParentComponent
+// we initialize in parent and use in child
