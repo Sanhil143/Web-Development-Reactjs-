@@ -4,6 +4,7 @@ import { ClassComponent } from './components/ClassComponent';
 import PractiseJsx from './jsx/PractiseJsx';
 import ParentComponent from './props/ParentComponent';
 import Usestate from './hooks/Usestate';
+import Useeffect from './hooks/Useeffect';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       {/* <ClassComponent/> */}
       {/* <PractiseJsx/> */} 
       {/* <ParentComponent/> */}
-      <Usestate/>
+      {/* <Usestate/> */}
+      <Useeffect/>
     </>
   )
 }
