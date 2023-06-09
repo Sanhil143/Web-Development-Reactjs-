@@ -5,6 +5,7 @@ import PractiseJsx from './jsx/PractiseJsx';
 import ParentComponent from './props/ParentComponent';
 import Usestate from './hooks/Usestate';
 import Useeffect from './hooks/Useeffect';
+import CounterForContext from './components/CounterForContext';
 
 function App() {
 
@@ -15,7 +16,11 @@ function App() {
       {/* <PractiseJsx/> */} 
       {/* <ParentComponent/> */}
       {/* <Usestate/> */}
-      <Useeffect/>
+      {/* <Useeffect/> */}
+      <CounterForContext/>
+      <CounterForContext/>
+      <CounterForContext/>
+      <CounterForContext/>
     </>
   )
 }
