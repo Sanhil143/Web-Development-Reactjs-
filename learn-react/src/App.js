@@ -6,23 +6,36 @@ import ParentComponent from './props/ParentComponent';
 import Usestate from './hooks/Usestate';
 import Useeffect from './hooks/Useeffect';
 import CounterForContext from './components/CounterForContext';
+import CounterContext from './contexts/CounterContext';
+import { useContext } from 'react';
 
 function App() {
 
+  // return (
+  //   <>
+  //     {/* <FunctionalComponent /> */}
+  //     {/* <ClassComponent/> */}
+  //     {/* <PractiseJsx/> */} 
+  //     {/* <ParentComponent/> */}
+  //     {/* <Usestate/> */}
+  //     {/* <Useeffect/> */}
+      
+  //   </>
+  // )
+
+  const counterState = useContext(CounterContext)
   return (
     <>
-      {/* <FunctionalComponent /> */}
-      {/* <ClassComponent/> */}
-      {/* <PractiseJsx/> */} 
-      {/* <ParentComponent/> */}
-      {/* <Usestate/> */}
-      {/* <Useeffect/> */}
+     <h3>Count is {counterState.count}</h3>
       <CounterForContext/>
-      <CounterForContext/>
-      <CounterForContext/>
+       <CounterForContext/>
+       <CounterForContext/>
       <CounterForContext/>
     </>
   )
 }
 
 export default App;
+
+
+//
