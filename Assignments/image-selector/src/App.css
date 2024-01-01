@@ -1,40 +1,5 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
+div{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 395px; 
-}
-
-.container > img {
-  height: 100%; 
-  width: 500px; 
-}
-
-.images {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-around; 
-  margin-top: 20px;
-  height: 200px; 
-
-}
-
-.images > img {
-  width:200px; 
-  height: 100%;
-  margin: 10px; 
-  cursor: pointer;
-  border: 3px solid white;
-}
-
-.images > img:hover{
-  border:3px dotted black;
-  border-color: teal;
-  border-radius: 20px;
 }
