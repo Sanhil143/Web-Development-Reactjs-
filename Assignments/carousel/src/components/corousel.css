@@ -1,0 +1,23 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.carousel-container{
+      display: flex;
+      height: 40px;
+      width: 100%;
+}
+img{
+      height: 100%;
+      
+}
+.slider{
+      height: 40px;
+      width: 100%;
+}
+
+.slider > img{
+      height: 100%;
+}
