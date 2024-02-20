@@ -1,0 +1,25 @@
+.navbar{
+  width: auto;
+  height: 50px;
+  background-color:#66b2b2;
+}
+
+li{
+  margin-right: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+li:hover{
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 20%;
+}
+
+.list{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
