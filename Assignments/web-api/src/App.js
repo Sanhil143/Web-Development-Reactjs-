@@ -1,13 +1,18 @@
-import './App.css';
-import Navbar from './static/Navbar';
-import Sidebar from './static/Sidebar';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Data from "./components/Data";
+import Navbar from "./static/Navbar";
+import Sidebar from "./static/Sidebar";
 
 function App() {
   return (
-    <>
-    <Navbar/>
-    <Sidebar/>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route path="/posts" Component={Data} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

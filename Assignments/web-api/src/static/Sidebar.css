@@ -1,12 +1,20 @@
 .sidebar{
   width: 15%;
   height: 100vh;
-  border: 1px solid black;
-}
-side-item{
-  border: none;
+  background-color:#66b2b2;
 }
 
 .sidebar-list{
   text-align: center;
 }
+
+.side-item{
+  border: 1px solid #66b2b2;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.side-item:hover{
+  color: white;
+}
+
