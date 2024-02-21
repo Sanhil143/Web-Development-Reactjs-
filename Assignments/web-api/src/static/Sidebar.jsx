@@ -5,8 +5,8 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
     <ol className='listClass'>
-      <li>posts</li>
-      <li>profile</li>
+      <li className='side-list'>posts</li>
+      <li className='si'>profile</li>
     </ol>
     </div>
   )
