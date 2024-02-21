@@ -3,10 +3,11 @@
   height: 100vh;
   border: 1px solid black;
 }
-
 li{
-  list-style: none;
+  border: none;
+  
 }
+
 .listClass{
   text-align: center;
 }
