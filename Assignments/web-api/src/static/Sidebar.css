@@ -3,11 +3,10 @@
   height: 100vh;
   border: 1px solid black;
 }
-li{
+side-item{
   border: none;
-  
 }
 
-.listClass{
+.sidebar-list{
   text-align: center;
 }

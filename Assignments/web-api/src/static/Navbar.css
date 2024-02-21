@@ -4,20 +4,20 @@
   background-color:#66b2b2;
 }
 
-li{
+.navbar-item{
   list-style: none;
   cursor: pointer;
   padding: 8px;
-  border: 2px solid #66b2b2 !important;
+  border: 2px solid #66b2b2;
 }
-li:hover{
+.navbar-item:hover{
   background-color: transparent;
-  border: 2px solid white !important;
+  border: 2px solid white ;
   padding: 8px;
   border-radius: 20%;
 }
 
-.list{
+.navbar-list{
   display: flex;
   justify-content: flex-end;
   align-items: center;

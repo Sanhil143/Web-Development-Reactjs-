@@ -4,9 +4,9 @@ import './Sidebar.css'
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-    <ol className='listClass'>
-      <li className='side-list'>posts</li>
-      <li className='si'>profile</li>
+    <ol className='sidebar-list'>
+      <li className='side-item'>Posts</li>
+      <li className='side-item'>Profile</li>
     </ol>
     </div>
   )
