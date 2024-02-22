@@ -1,17 +1,21 @@
-import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Data from "./components/Data";
 import Navbar from "./static/Navbar";
 import Sidebar from "./static/Sidebar";
+import Login from "./components/auth/Login";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Sidebar />
-      <Routes>
-        <Route path="/posts" Component={Data} />
-      </Routes>
+      <div>
+        {/* <Navbar />
+        <Sidebar /> */}
+        <Routes>
+          <Route path="/posts" element={<Data />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
