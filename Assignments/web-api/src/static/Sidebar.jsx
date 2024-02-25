@@ -9,7 +9,7 @@ const Sidebar = () => {
       <div className='sidebar'>
     <ol className='sidebar-list'>
       <li className='side-item' ><Link to='/posts'>Post</Link></li>
-      <li className='side-item'>Profile</li>
+      <li className='side-item'><Link to="/profile">Profile</Link></li>
       <li className='side-item'>Setting</li>
       <li className='side-item'>Logout</li>
     </ol>
