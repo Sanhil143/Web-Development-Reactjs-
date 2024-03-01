@@ -16,6 +16,7 @@
   border: 1px solid #66b2b2;
   cursor: pointer;
   padding: 10px;
+  list-style: none;
 }
 
 .side-item:hover{

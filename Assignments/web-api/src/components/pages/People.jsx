@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Data = () => {
+const People = () => {
   const [data, setData] = useState([]);
 
   const results = async () => {
@@ -52,4 +52,4 @@ const Data = () => {
   );
 };
 
-export default Data;
+export default People;
