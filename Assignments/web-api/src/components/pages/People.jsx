@@ -5,7 +5,7 @@ const People = () => {
   const [data, setData] = useState([]);
 
   const results = async () => {
-    const res = await axios.get("https://reqres.in/api/users?page=2");
+    const res = await axios.get("https://reqres.in/api/users?page=3");
     console.log(res.data.data);
     setData(res.data.data);
   };
