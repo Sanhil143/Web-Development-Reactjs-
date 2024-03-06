@@ -15,7 +15,6 @@ const Login = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
     const body = JSON.stringify({email,password});
     const config = {
       headers:{
@@ -23,8 +22,11 @@ const Login = () => {
       },
     }
     try {
-    const res = await axios.post(`https://reqres.in/api/register`,body,config)
-    console.log(res.data);
+    const res = await axios.post(`https://reqres.in/api/login`,body,config);
+    if(res.data){
+      localStorage.setItem("token",res.data.token)
+      localStorage.setItem("userId",res.data.id)
+    }
     } catch (error) {
       console.log(error.message)
     }

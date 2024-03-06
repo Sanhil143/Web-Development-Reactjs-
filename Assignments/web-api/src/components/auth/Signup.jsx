@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Signup.css'
+import axios from "axios";
 
 const Signup = () => {
   const [formData,setFormData] = useState({
@@ -15,9 +16,24 @@ const Signup = () => {
     setFormData({...formData, [e.target.name]:e.target.value})
   }
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
+    const body = JSON.stringify({firstname,lastname,email,password})
+    const config = {
+      headers:{
+        "Content-Type":"application/json"
+      }
+    }
+    try {
+    const res = await axios.post(`https://reqres.in/api/register`,body,config);
+    if(res.data){
+      localStorage.setItem("token",res.data.token)
+      localStorage.setItem("userId",res.data.id)
+    }
+    console.log(res.data);
+    } catch (error) {
+      console.log(error.message)
+    }
   }
   return (
     <div className="signup-page">
