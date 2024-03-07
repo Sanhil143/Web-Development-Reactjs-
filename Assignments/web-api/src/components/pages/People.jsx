@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const People = () => {
   const [data, setData] = useState([]);
@@ -23,8 +24,12 @@ const People = () => {
       }}
     >
       {data.map((user) => (
+        <Link
+        key={user.id}
+        to={`/profile/${user.id}`}
+        >
         <div
-          key={user.id}
+          
           style={{
             width: "20%",
             height: "200px",
@@ -43,10 +48,12 @@ const People = () => {
               alignItems: "center",
               textAlign: "center",
             }}
+            alt="userImage"
           />
           <p>{`${user.first_name} ${user.last_name}`}</p>
           <p>{`${user.email}`}</p>
         </div>
+        </Link>
       ))}
     </div>
   );
