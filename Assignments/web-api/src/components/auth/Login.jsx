@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Login.css";
 import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate()
   const [formData,setFormData] = useState({
     email:"",
     password:""
@@ -25,7 +27,7 @@ const Login = () => {
     const res = await axios.post(`https://reqres.in/api/login`,body,config);
     if(res.data){
       localStorage.setItem("token",res.data.token)
-      localStorage.setItem("userId",res.data.id)
+      navigate('/navbar')
     }
     } catch (error) {
       console.log(error.message)
@@ -68,6 +70,7 @@ const Login = () => {
         <button type="submit" className="form-btn">
           login
         </button>
+        <p>create your new Journey with us <Link to="/signup">Join now</Link></p>
         </div>
       </form>
     </div>

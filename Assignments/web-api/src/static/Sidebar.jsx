@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './Sidebar.css'
-import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import People from '../components/pages/People';
 import Profile from '../components/pages/Profile';
 import Setting from '../components/pages/Setting';
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   const [showPost, setShowPost] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const [showSetting, setShowSetting] = useState(false);
@@ -28,6 +29,11 @@ const Sidebar = () => {
     setShowProfile(false);
   }
 
+  const logoutAccount = () => {
+    localStorage.clear()
+    navigate('/login')
+  }
+
   return (
     <div className='main'>
       <div className='sidebar'>
@@ -35,7 +41,7 @@ const Sidebar = () => {
       <li className='side-item' onClick={togglePost}>Post</li>
       <li className='side-item' onClick={toggleProfile}>Profile</li>
       <li className='side-item' onClick={toggleSetting}>Setting</li>
-      <li className='side-item'><Link to={'/login'} className='link-cl'>Logout</Link></li>
+      <li className='side-item' onClick={logoutAccount}>Logout</li>
     </ol>
     </div>
     {showPost && <People/>}

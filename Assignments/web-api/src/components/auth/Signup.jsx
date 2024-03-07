@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Signup.css'
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [formData,setFormData] = useState({
@@ -29,6 +30,7 @@ const Signup = () => {
     if(res.data){
       localStorage.setItem("token",res.data.token)
       localStorage.setItem("userId",res.data.id)
+      
     }
     console.log(res.data);
     } catch (error) {
@@ -96,6 +98,7 @@ const Signup = () => {
           <button type="submit" className="form-btn">
             signup
           </button>
+          <p>already have account <Link to='/login'>Login</Link></p>
         </div>
       </form>
     </div>
