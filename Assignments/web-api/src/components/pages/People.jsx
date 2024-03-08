@@ -7,7 +7,6 @@ const People = () => {
 
   const results = async () => {
     const res = await axios.get("https://reqres.in/api/users?page=2");
-    console.log(res.data.data);
     setData(res.data.data);
   };
   useEffect(() => {
@@ -24,12 +23,9 @@ const People = () => {
       }}
     >
       {data.map((user) => (
-        <Link
-        key={user.id}
-        to={`/profile/${user.id}`}
-        >
+       
         <div
-          
+          key={user.id}
           style={{
             width: "20%",
             height: "200px",
@@ -39,6 +35,9 @@ const People = () => {
             alignItems: "center",
             marginBottom: "15px",
           }}
+        >
+        <Link
+        to={`/profile/${user.id}`}
         >
           <img
             src={user.avatar}
@@ -50,10 +49,11 @@ const People = () => {
             }}
             alt="userImage"
           />
+          </Link>
           <p>{`${user.first_name} ${user.last_name}`}</p>
           <p>{`${user.email}`}</p>
+          
         </div>
-        </Link>
       ))}
     </div>
   );
