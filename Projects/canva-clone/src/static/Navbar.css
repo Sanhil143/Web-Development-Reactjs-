@@ -4,6 +4,12 @@
   background-color: #448787;
 }
 
+.img-container {
+  margin-left: 15px;
+  height: auto;
+  width: 50px;
+  border: 1px solid black;
+}
 .navbar-ul{
   display: flex;
   justify-content: flex-start;
