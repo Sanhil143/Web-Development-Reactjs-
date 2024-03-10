@@ -8,7 +8,6 @@ import Profile from "./components/pages/Profile";
 function App() {
   return (
     <>
-    
     <BrowserRouter>
       <div>
         <Routes>
