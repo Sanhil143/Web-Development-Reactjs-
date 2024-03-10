@@ -3,6 +3,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar-container">
+    <div className="navbar-con">
      <div className="img-container">
       <img className="img-src" src="Canva-Logo-2013.png" alt="logo"/>
      </div>
@@ -12,6 +13,11 @@ const Navbar = () => {
         <li className="navbar-li">Education</li>
         <li className="navbar-li">Plans</li>
         <li className="navbar-li">Learn</li>
+      </ul>
+      </div>
+      <ul className="navbar-auth">
+        <li className="navbar-li-auth">Login</li>
+        <li className="navbar-li-auth">Signup</li>
       </ul>
     </div>
   );
