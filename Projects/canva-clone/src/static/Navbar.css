@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #448787;
+  border: 1px solid silver;
 }
 
 .navbar-con{
@@ -54,6 +54,7 @@
 
 .navbar-li:hover, .navbar-li-auth:hover{
   padding: 5px;
-  border: 1px solid whitesmoke;
-  border-radius: 10%;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: white;
 }

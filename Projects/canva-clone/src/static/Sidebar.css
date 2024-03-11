@@ -1,25 +1,40 @@
 .sidebar-container{
   height: 100vh;
   width:15%;
-  border: 1px solid black;
+  border-right: 1px solid silver;
 }
 
 .sidebar-ul{
   text-align: center;
 }
 
-.sidebar-li{
-  border: 1px solid transparent;
-  cursor: pointer;
-  color: black;
-  list-style: none;
-}
-
-.side-icon{
+.side-li-div{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 55px;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
+.side-li-div:hover{
+  border: 1px solid black
+}
+
+.side-icon{
+  width: 75px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.sidebar-li{
+  border: 1px solid transparent;
+  width: 100px;
+  text-align: left;
+  cursor: pointer;
+  color: black;
+  list-style: none;
+  margin-right: 10px;
+}
+
+
+
