@@ -1,0 +1,19 @@
+.san-hero{
+  height: 250px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: blue;
+}
+
+.san-nav{
+  display: flex;
+  margin-left: 80%;
+  height: 50px;
+  width: 20%;
+  border: 1px solid black;
+}
+
+.san-button{
+  margin-left: 5px;
+  padding: 40px;
+}
