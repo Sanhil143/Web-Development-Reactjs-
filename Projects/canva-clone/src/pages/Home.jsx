@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import { IoSearch } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -12,9 +13,12 @@ const Home = () => {
       <div className='san-tagDiv'>
       <span className='san-tag'>What will you design today?</span>
       </div>
-      <div className='san-searchbar'>
-      
+      <div className='san-search-container'>
+      <div className='san-searchbar-div'>
+      <IoSearch className='san-searchIcon'/>
+      <input className='san-searchbar-input'></input>
       </div>
+      </div>  
       </div>
     </div>
   )
