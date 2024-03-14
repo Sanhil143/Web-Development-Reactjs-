@@ -1,0 +1,32 @@
+.san-constainer{
+  height: 100vh;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.san-car-container{
+  display: flex;
+  height: 180px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.san-car{
+  height: 100%;
+  width: 240px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.san-img{
+  height: 130px;
+  width: auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: gray;
+}
+
+.san-para{
+  font-size: large;
+}
