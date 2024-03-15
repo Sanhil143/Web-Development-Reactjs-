@@ -10,6 +10,8 @@ import { MdOutlineVideoSettings } from "react-icons/md";
 import { FaPrint } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineMoreHoriz } from "react-icons/md";
+import Navbar from "../static/Navbar";
+import Sidebar from "../static/Sidebar";
 
 
 const Home = () => {
