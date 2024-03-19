@@ -16,7 +16,9 @@ import Sidebar from "../static/Sidebar";
 
 const Home = () => {
   return (
-    <div>
+    
+    <div style={{display:"flex"}}>
+       <Sidebar/>
       <div className="san-hero">
         <div className="san-nav">
           <button className="san-button">Custom size</button>
